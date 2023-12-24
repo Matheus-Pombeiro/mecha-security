@@ -4,9 +4,86 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mecha Security</title>
+    <link rel="shortcut icon" href="assets/favicon.png" type="image/x-icon">
     <link rel="stylesheet" href="../dist/output.css">
 </head>
-<body>
-    
+<body class="w-screen h-dvh bg-gray-100 flex flex-col justify-between">
+
+    <!--Header-->
+    <header class="w-full h-16 px-2 bg-white flex justify-between items-center drop-shadow">
+
+        <img src="assets/logo.png" alt="Logo" class="h-12">
+
+        <!--Navbar-->
+        <nav class="w-fit flex justify-between items-center gap-2">
+
+            <img src="assets/sun.png" alt="Theme Button" class="h-8 hover:scale-105 transition duration-200 ease-in-out cursor-pointer" data-theme-btn>
+
+            <!--G-Translate-->
+            <div class="gtranslate_wrapper space-x-1"></div>
+
+        </nav>
+
+    </header>
+
+    <!--Main-->
+    <main class="w-full space-y-10">
+
+        <!--Title-->
+        <section class="w-fit mx-auto">
+
+            <h1 class="text-lg md:text-2xl font-semibold">Mecha Security</h1>
+
+        </section>
+
+        <!--Form and output-->
+        <section class="w-5/6 md:w-8/12 xl:w-2/6 h-fit mx-auto px-5 py-10 space-y-5 bg-slate-200 border border-blue-500 rounded-md drop-shadow">
+            
+            <!--Form-->
+            <form class="w-11/12 md:w-9/12 mx-auto">
+
+                <label for="msg"><p class="md:text-lg">Message:</p></label>
+                <input type="text" name="msg" id="msg" class="w-full mt-1 bg-gray-50 p-2 placeholder:text-gray-500 rounded outline-none border border-gray-300 focus:border-blue-500 focus:ring focus:ring-blue-400 focus:ring-opacity-20" placeholder="Write your message here" data-msg-in>
+
+                <!--Buttons-->
+                <div class="w-fit mt-4 space-x-1">
+                    
+                    <button type="submit" class="btn">Encrypt</button>
+                    <button type="reset" class="btn">Clean</button>
+                
+                </div>
+
+            </form>
+
+            <!--Output data-->
+            <section class="w-11/12 md:w-9/12 mx-auto mt-4 space-y-2">
+
+                <h2 class="md:text-lg font-medium">Encrypted Message:</h2>
+
+                <section class="w-full h-36 mx-auto p-2 bg-slate-100 border border-blue-500 rounded drop-shadow hover:scale-110 transition duration-300 ease-in-out overflow-auto touch-pan-y flex">
+                    
+                    <p class="text-justify m-auto" data-msg-out>Your encrypted message will be here...</p>
+                
+                </section>
+
+                <img src="assets/copy.png" alt="Copy" class="h-9 ml-auto hover:scale-105 transition duration-200 ease-in-out cursor-pointer">
+
+            </section>
+
+        </section>
+
+    </main>
+
+    <!--Footer-->
+    <footer class="w-full h-14 bg-white flex justify-center items-center">
+
+        <p class="text-lg"><a href="https://www.linkedin.com/in/matheus-pombeiro/" target="_blank" rel="noopener noreferrer" class="font-medium hover:underline">Matheus Pombeiro</a> | 2023 &copy;</p>
+
+    </footer>
+
+    <!--G-Translate scripts-->
+    <script>window.gtranslateSettings = {"default_language":"en","languages":["en","pt"],"wrapper_selector":".gtranslate_wrapper","alt_flags":{"en":"usa","pt":"brazil"}}</script>
+    <script src="https://cdn.gtranslate.net/widgets/latest/flags.js" defer></script>
+
 </body>
 </html>
