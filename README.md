@@ -31,6 +31,7 @@
 
   <ul>
     <li>Business programming logic</li>
+    <li>Modal</li>
     <li>Theme switching</li>
     <li>LocalStorage to save the user's theme preferences</li>
     <li>LocalStorage to save the last user's encrypted message</li>
