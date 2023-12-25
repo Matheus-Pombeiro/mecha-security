@@ -4,6 +4,10 @@
 
 @layer components {
 
+    .h1 {
+        @apply text-lg md:text-2xl font-semibold;
+    }
+
     .btn {
         @apply px-2 py-1 bg-blue-500 hover:bg-blue-700 active:bg-blue-400 text-white font-medium rounded outline-none;
     }
