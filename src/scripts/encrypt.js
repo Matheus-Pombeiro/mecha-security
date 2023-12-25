@@ -4,7 +4,7 @@ const encrypt = (frm, msgIn, msgOut) => {
     window.addEventListener("load", () => {     // Listen the page's loading
 
         const encryptedMsg = localStorage.getItem("encryptedMsg");  // Get the encrypted message
-        msgOut.innerHTML = encryptedMsg;                            // Do the output message
+        encryptedMsg.length > 0 ? msgOut.innerHTML = encryptedMsg : msgOut.innerHTML = "Your encrypted message will be here...";                            // Do the output message
 
     });
 
